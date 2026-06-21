@@ -6,7 +6,14 @@
   <title>Lo Chef — Sapore è Sapere</title>
   <meta name="description" content="Lo chef Marco Taglione: dalla Boscolo Etoile Academy alle cucine stellate di Antonello Colonna e Cannavacciuolo, fino all'apertura di Sapore è Sapere con la pasticcera Marika Urbani.">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="stylesheet" href="css/style.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/main.css">
+  <script type="module" src="/src/main.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Vai al contenuto</a>
@@ -14,18 +21,23 @@
   <header class="site-header">
     <nav class="nav" aria-label="Navigazione principale">
       <a class="brand" href="index.html">
-        <span class="mark">S</span>
+        <span class="mark"><span>S</span></span>
         <span class="name">Sapore <span>è</span> Sapere</span>
       </a>
+      
       <input type="checkbox" id="nav-toggle" class="nav-toggle">
       <label for="nav-toggle" class="nav-toggle-label" aria-label="Apri menu"><span></span></label>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
+        <li><a href="ristorante.html">Ristorante</a></li>
+        <li><a href="chef.html" aria-current="page">Chef</a></li>
         <li><a href="menu.html">Menù</a></li>
         <li><a href="vini.html">Vini</a></li>
-        <li><a href="chef.html" aria-current="page">Chef</a></li>
+        <li><a href="galleria.html">Galleria</a></li>
         <li><a href="contatti.html">Contatti</a></li>
       </ul>
+      
+      <a href="contatti.html" class="nav-cta">Prenota</a>
     </nav>
   </header>
 
@@ -92,9 +104,18 @@
         <a href="tel:+3907751561428">+39 0775 1561428</a> ·
         <a href="mailto:Sapore.sapere@libero.it">Sapore.sapere@libero.it</a>
       </p>
-      <p>Seguici su Instagram per non perdere le novità.</p>
-      <p class="footer-legal">© 2019–2026 Sapore è Sapere · Presenti allergeni (Reg. CE 1169/2011)</p>
+      <p class="footer-legal">© 2019-2026 Sapore è Sapere · Via Marcello Mastroianni snc, 03100 Frosinone (FR) · P. IVA 00000000000 · Presenti allergeni (Reg. CE 1169/2011)</p>
+    </div>
+    <div class="footer-social">
+      <a href="https://instagram.com/ristorantesaporeesapere" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://facebook.com/saporeesapere" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://wa.me/3907751561428" target="_blank" rel="noopener">WhatsApp</a>
     </div>
   </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/3907751561428" class="floating-whatsapp" target="_blank" rel="noopener" aria-label="Scrivici su WhatsApp">
+    WhatsApp
+  </a>
 </body>
 </html>

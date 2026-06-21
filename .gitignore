@@ -9,4 +9,24 @@ Thumbs.db
 
 # Logs / temp
 *.log
+
+# Dependencies
 node_modules/
+
+# Build output
+dist/
+
+# Source directory (keep this for JavaScript)
+# src/ - we're keeping main.js for Vite
+
+# Cache
+*.cache
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
