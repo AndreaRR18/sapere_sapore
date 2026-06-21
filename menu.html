@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menù — Sapore è Sapere</title>
+  <meta name="description" content="Il menù di Sapore è Sapere: antipasti, primi, secondi e dessert di pesce, menù degustazione 5 portate a € 50 e degustazione vini in abbinamento.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Vai al contenuto</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Navigazione principale">
+      <a class="brand" href="index.html">
+        <span class="mark">S</span>
+        <span class="name">Sapore <span>è</span> Sapere</span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Apri menu"><span></span></label>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" aria-current="page">Menù</a></li>
+        <li><a href="vini.html">Vini</a></li>
+        <li><a href="chef.html">Chef</a></li>
+        <li><a href="contatti.html">Contatti</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" style="padding-block: clamp(70px,12vw,120px) clamp(40px,7vw,70px);">
+      <div class="container">
+        <p class="eyebrow">La carta</p>
+        <h1>Menù</h1>
+        <p class="lead">Cucina di pesce, abbinamenti inediti e tecnica stellata. I piatti possono variare in base alla disponibilità del mercato.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="feature-box">
+          <p class="eyebrow">Menù Degustazione "Sapere"</p>
+          <h3>Degustazione da 5 portate</h3>
+          <p style="color:var(--muted);margin:.2em 0 .6em;">Che il nostro Chef Marco Taglione preparerà per voi.</p>
+          <p class="price">€ 50</p>
+        </div>
+
+        <div class="feature-box">
+          <p class="eyebrow">Degustazione vini</p>
+          <h3>Calici in abbinamento</h3>
+          <p style="color:var(--muted);margin:.4em 0 0;">3 calici — <strong style="color:var(--gold)">€ 20</strong> · 5 calici — <strong style="color:var(--gold)">€ 35</strong></p>
+        </div>
+
+        <!-- ANTIPASTI -->
+        <div class="menu-group">
+          <h3>Antipasti</h3>
+          <div class="menu-item">
+            <span class="mi-name"><strong>Ostriche</strong></span>
+            <span class="mi-dots"></span>
+            <span class="mi-price">€ 3 / pz</span>
+          </div>
+          <div class="menu-item">
+            <span class="mi-name"><strong>Gamberi fritti e hummus di ceci</strong> ^</span>
+            <span class="mi-dots"></span>
+            <span class="mi-price">€ 15</span>
+          </div>
+          <div class="menu-item">
+            <span class="mi-name"><strong>Insalata di mare</strong> ^</span>
+            <span class="mi-dots"></span>
+            <span class="mi-price">€ 16</span>
+          </div>
+          <div class="menu-item">
+            <span class="mi-name"><strong>Tagliatelle di seppia</strong>, pomodorini alla brace, scamorza affumicata e salsa bbq ^</span>
+            <span class="mi-dots"></span>
+            <span class="mi-price">€ 18</span>
+          </div>
+          <div class="menu-item">
+            <span class="mi-name"><strong>Crudo di salmone stagionato</strong> con crema di avocado agrodolce e crumble agli agrumi ^</span>
+            <span class="mi-dots"></span>
+            <span class="mi-price">€ 18</span>
+          </div>
+          <div class="menu-item">
+            <span class="mi-name"><strong>Tartare di tonno marinata</strong> con salsa di soia e tabasco, e semi di sesamo tostati ^</span>
+            <span class="mi-dots"></span>
+            <span class="mi-price">€ 21</span>
+          </div>
+        </div>
+
+        <!-- PRIMI -->
+        <div class="menu-group">
+          <h3>Primi Piatti</h3>
+          <div class="menu-item">
+            <span class="mi-name"><strong>Tagliolini all'uovo</strong> con scampi e vaniglia ^</span>
+            <span class="mi-dots"></span>
+            <span class="mi-price">€ 15</span>
+          </div>
+          <div class="menu-item">
+            <span class="mi-name"><strong>Gnocchetti di patate</strong> con baccalà, zucchine alla scapece e feta greca affumicata ^</span>
+            <span class="mi-dots"></span>
+            <span class="mi-price">€ 18</span>
+          </div>
+          <div class="menu-item">
+            <span class="mi-name"><strong>Lasagna bianca</strong> con salmone, spinacino, basilico e mozzarella ^ <em style="color:var(--muted)">(senza lattosio)</em></span>
+            <span class="mi-dots"></span>
+            <span class="mi-price">€ 18</span>
+          </div>
+          <div class="menu-item">
+            <span class="mi-name"><strong>Fettuccine allo scoglio</strong> ^</span>
+            <span class="mi-dots"></span>
+            <span class="mi-price">€ 20</span>
+          </div>
+          <div class="menu-item">
+            <span class="mi-name"><strong>Ravioli con gamberi e capesante</strong>, bisque alleggerita, olio al basilico, taralli e limone ^</span>
+            <span class="mi-dots"></span>
+            <span class="mi-price">€ 20</span>
+          </div>
+        </div>
+
+        <!-- SECONDI -->
+        <div class="menu-group">
+          <h3>Secondi Piatti</h3>
+          <div class="menu-item">
+            <span class="mi-name"><strong>Kebab di tonno</strong> con yogurt e menta, insalata di finocchi, arancia e zenzero ^</span>
+            <span class="mi-dots"></span>
+            <span class="mi-price">€ 18</span>
+          </div>
+          <div class="menu-item">
+            <span class="mi-name"><strong>Baccalà alla brace</strong> con patate al forno al rosmarino ^</span>
+            <span class="mi-dots"></span>
+            <span class="mi-price">€ 20</span>
+          </div>
+          <div class="menu-item">
+            <span class="mi-name"><strong>Pesce spada alla brace</strong>, pesto di melanzane, mandorle e limone e pomodori secchi ^</span>
+            <span class="mi-dots"></span>
+            <span class="mi-price">€ 22</span>
+          </div>
+          <div class="menu-item">
+            <span class="mi-name"><strong>Spiedino di seppia dorata</strong> con indivia belga e uvetta e crumble al lime ^</span>
+            <span class="mi-dots"></span>
+            <span class="mi-price">€ 24</span>
+          </div>
+          <div class="menu-item">
+            <span class="mi-name"><strong>Frittura di calamari</strong> ^</span>
+            <span class="mi-dots"></span>
+            <span class="mi-price">€ 24</span>
+          </div>
+        </div>
+
+        <!-- DESSERT -->
+        <div class="menu-group">
+          <h3>Dessert</h3>
+          <div class="menu-item">
+            <span class="mi-name"><strong>Tiramisù</strong> ^</span>
+            <span class="mi-dots"></span>
+            <span class="mi-price">€ 6</span>
+          </div>
+          <div class="menu-item">
+            <span class="mi-name"><strong>Bavarese lampone e cioccolato fondente</strong> con frolla al cacao ^</span>
+            <span class="mi-dots"></span>
+            <span class="mi-price">€ 8</span>
+          </div>
+          <div class="menu-item">
+            <span class="mi-name"><strong>Tartelletta</strong> con crema al limone e fragole fresche</span>
+            <span class="mi-dots"></span>
+            <span class="mi-price">€ 8</span>
+          </div>
+          <div class="menu-item">
+            <span class="mi-name"><strong>Cioccolato, noccioline e pop corn</strong> ^ <em style="color:var(--muted)">(senza glutine)</em></span>
+            <span class="mi-dots"></span>
+            <span class="mi-price">€ 9</span>
+          </div>
+          <div class="menu-item">
+            <span class="mi-name"><strong>Tagliata di frutta</strong></span>
+            <span class="mi-dots"></span>
+            <span class="mi-price">€ 15</span>
+          </div>
+        </div>
+
+        <!-- CIOCCOLATO -->
+        <div class="menu-group">
+          <h3>Degustazione di cioccolato artigianale</h3>
+          <div class="menu-item">
+            <span class="mi-name"><strong>Scala di fondenti</strong></span>
+            <span class="mi-dots"></span>
+            <span class="mi-price">€ 8</span>
+          </div>
+          <div class="menu-item">
+            <span class="mi-name"><strong>Aromatici</strong></span>
+            <span class="mi-dots"></span>
+            <span class="mi-price">€ 9</span>
+          </div>
+          <div class="menu-item">
+            <span class="mi-name"><strong>Gran selezione</strong></span>
+            <span class="mi-dots"></span>
+            <span class="mi-price">€ 15</span>
+          </div>
+        </div>
+
+        <p class="note">
+          Servizio € 2 · Acqua € 3.<br>
+          ^ Alcuni prodotti sono sottoposti in loco ad abbattimento di temperatura negativa per garantirne qualità e sicurezza, come descritto nelle procedure del piano HACCP ai sensi del Reg. CE 852/04.<br>
+          In applicazione al regolamento CE 1169/2011, nella nostra cucina sono presenti diversi allergeni. Si prega di comunicare al responsabile di sala eventuali allergie e di consultare la tabella degli allergeni.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <span class="mark">S</span>
+        <span class="name">Sapore <span>è</span> Sapere</span>
+      </a>
+      <p class="footer-contacts">
+        Via Marcello Mastroianni snc, 03100 Frosinone (FR)<br>
+        <a href="tel:+3907751561428">+39 0775 1561428</a> ·
+        <a href="mailto:Sapore.sapere@libero.it">Sapore.sapere@libero.it</a>
+      </p>
+      <p>Seguici su Instagram per non perdere le novità.</p>
+      <p class="footer-legal">© 2019–2026 Sapore è Sapere · Presenti allergeni (Reg. CE 1169/2011)</p>
+    </div>
+  </footer>
+</body>
+</html>
