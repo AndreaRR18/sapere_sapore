@@ -13,7 +13,7 @@
   
   <!-- CSS -->
   <link rel="stylesheet" href="css/main.css">
-  <script type="module" src="/src/main.js"></script>
+  <script type="module" src="src/main.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Vai al contenuto</a>
@@ -33,7 +33,6 @@
         <li><a href="chef.html" aria-current="page">Chef</a></li>
         <li><a href="menu.html">Menù</a></li>
         <li><a href="vini.html">Vini</a></li>
-        <li><a href="galleria.html">Galleria</a></li>
         <li><a href="contatti.html">Contatti</a></li>
       </ul>
       
@@ -47,6 +46,22 @@
         <p class="eyebrow">Il talento dietro i piatti</p>
         <h1>Lo Chef <span>Marco Taglione</span></h1>
         <p class="lead">Un percorso tra cucine stellate e hotel di lusso, in Italia e all'estero.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="chef-content">
+          <div class="chef-image">
+            <img src="assets/images/chef_taglione/chef_taglione_2.jpg" alt="Ritratto dello chef Marco Taglione" loading="lazy" width="560" height="640">
+          </div>
+          <div class="chef-text">
+            <p class="eyebrow">Chi è</p>
+            <h2>Tecnica, mare e curiosità</h2>
+            <p class="chef-title">Chef e co-fondatore</p>
+            <p>Dalla Boscolo Etoile Academy alle brigate stellate di Antonello Colonna e Cannavacciuolo, Marco Taglione ha costruito un mestiere fatto di studio e disciplina. A Sapore è Sapere quella tecnica diventa libertà: piatti di mare che osano accostamenti inediti senza mai perdere equilibrio.</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -73,6 +88,21 @@
           <li><strong>Cannavacciuolo Caffè e Bistrot ⭐ Michelin</strong> — Novara · <span>Capo partita secondi piatti</span></li>
           <li><strong>Sapore è Sapere</strong> — Frosinone · <span>23 Maggio 2019</span></li>
         </ol>
+      </div>
+    </section>
+
+    <section class="gallery-section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">In cucina</p>
+          <h2>Dietro ai piatti</h2>
+          <hr class="divider">
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-item"><div class="gallery-image-container"><img src="assets/images/chef_taglione/chef_taglione_3.jpg" alt="Lo chef Marco Taglione al lavoro in cucina" loading="lazy" width="400" height="500"></div></figure>
+          <figure class="gallery-item"><div class="gallery-image-container"><img src="assets/images/chef_taglione/chef_taglione_4.jpg" alt="Lo chef Marco Taglione durante la preparazione di un piatto" loading="lazy" width="400" height="500"></div></figure>
+          <figure class="gallery-item"><div class="gallery-image-container"><img src="assets/images/chef_taglione/chef_taglione_5.jpg" alt="Dettaglio del lavoro dello chef Marco Taglione" loading="lazy" width="400" height="500"></div></figure>
+        </div>
       </div>
     </section>
 
@@ -113,9 +143,20 @@
     </div>
   </footer>
 
-  <!-- Floating WhatsApp Button -->
-  <a href="https://wa.me/3907751561428" class="floating-whatsapp" target="_blank" rel="noopener" aria-label="Scrivici su WhatsApp">
-    WhatsApp
-  </a>
+  <!-- Persistent reservation bar -->
+  <div class="reserve-bar" role="region" aria-label="Prenota un tavolo">
+    <span class="reserve-bar__text">Un tavolo vi aspetta — <em>il sapore nasce dal sapere.</em></span>
+    <!-- TODO: sostituire il numero con il WhatsApp mobile reale del ristorante;
+         ora usa il numero fisso come segnaposto e potrebbe non rispondere su WhatsApp. -->
+    <a class="reserve-bar__btn"
+       href="https://wa.me/3907751561428?text=Ciao%20Sapore%20%C3%A8%20Sapere%2C%20vorrei%20prenotare%20un%20tavolo."
+       target="_blank" rel="noopener"
+       aria-label="Prenota ora su WhatsApp">
+      <svg class="reserve-bar__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.91-7.02zM12.05 20.15h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"/>
+      </svg>
+      Prenota ora
+    </a>
+  </div>
 </body>
 </html>

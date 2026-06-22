@@ -39,7 +39,6 @@ export default defineConfig({
         chef: resolve(__dirname, 'chef.html'),
         menu: resolve(__dirname, 'menu.html'),
         vini: resolve(__dirname, 'vini.html'),
-        galleria: resolve(__dirname, 'galleria.html'),
         contatti: resolve(__dirname, 'contatti.html')
       }
     }
