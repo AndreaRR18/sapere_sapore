@@ -25,7 +25,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       # Il sito è statico (HTML/CSS + ES module nativo): nessun build necessario.
       # Assembliamo solo i file da pubblicare, escludendo sorgenti di sviluppo.
@@ -36,8 +36,12 @@ jobs:
           # .nojekyll evita che GitHub Pages ignori cartelle con underscore.
           touch _site/.nojekyll
 
+      # enablement: true fa sì che l'action abiliti GitHub Pages (build via Actions)
+      # se non è ancora attivo, evitando l'errore "Get Pages site failed / Not Found".
       - name: Configure Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
