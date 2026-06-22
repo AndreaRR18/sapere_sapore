@@ -39,6 +39,7 @@ function tagRevealTargets() {
     '.feature-box',
     '.restaurant-content',
     '.thesis-panel',
+    '.award',
     '.chef-content',
     '.menu-category',
     '.wine-region',
