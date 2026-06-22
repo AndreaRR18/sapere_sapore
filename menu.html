@@ -5,6 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Menù — Sapore è Sapere</title>
   <meta name="description" content="Il menù di Sapore è Sapere: antipasti, primi, secondi e dessert di pesce, menù degustazione 5 portate a € 50 e degustazione vini in abbinamento.">
+
+  <!-- Open Graph / social sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:site_name" content="Sapore è Sapere">
+  <meta property="og:title" content="Menù — Sapore è Sapere">
+  <meta property="og:description" content="Piatti che nascono dalla ricerca e dal gusto di sorprendere. Menù degustazione da 5 portate a € 50, con calici in abbinamento.">
+  <meta property="og:url" content="https://andrearr18.github.io/sapere_sapore/menu.html">
+  <meta property="og:image" content="https://andrearr18.github.io/sapere_sapore/assets/images/dishes/dish_1.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +40,6 @@
       <label for="nav-toggle" class="nav-toggle-label" aria-label="Apri menu"><span></span></label>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="ristorante.html">Ristorante</a></li>
         <li><a href="chef.html">Chef</a></li>
         <li><a href="menu.html" aria-current="page">Menù</a></li>
         <li><a href="vini.html">Vini</a></li>
@@ -54,14 +64,15 @@
         <div class="feature-box">
           <p class="eyebrow">Menù Degustazione "Sapere"</p>
           <h3>Degustazione da 5 portate</h3>
-          <p style="color:var(--muted);margin:.2em 0 .6em;">Cinque portate pensate dallo chef Marco Taglione.</p>
+          <p style="color:var(--muted);margin:.2em 0 .6em;">Cinque portate pensate dallo chef Marco Taglione: un percorso tra mare, tecnica e creatività.</p>
           <p class="price">€ 50</p>
         </div>
 
         <div class="feature-box">
           <p class="eyebrow">Degustazione vini</p>
           <h3>Calici in abbinamento</h3>
-          <p style="color:var(--muted);margin:.4em 0 0;">3 calici — <strong style="color:var(--brass)">€ 20</strong> · 5 calici — <strong style="color:var(--brass)">€ 35</strong></p>
+          <p style="color:var(--muted);margin:.4em 0 .4em;">Lasciatevi guidare: per ogni portata, il calice giusto scelto dal nostro personale di sala.</p>
+          <p style="color:var(--muted);margin:0;">3 calici — <strong style="color:var(--brass)">€ 20</strong> · 5 calici — <strong style="color:var(--brass)">€ 35</strong></p>
         </div>
 
         <!-- ANTIPASTI -->
@@ -229,17 +240,19 @@
         <a href="tel:+3907751561428">+39 0775 1561428</a> ·
         <a href="mailto:Sapore.sapere@libero.it">Sapore.sapere@libero.it</a>
       </p>
-      <p>Seguici su Instagram per non perdere le novità.</p>
+      <nav class="footer-social" aria-label="Social">
+        <a href="https://www.instagram.com/ristorantesaporeesapere/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/ristorantesaporesapere/?locale=it_IT" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://wa.me/393485475783" target="_blank" rel="noopener">WhatsApp</a>
+      </nav>
       <p class="footer-legal">© 2019–2026 Sapore è Sapere · Presenti allergeni (Reg. CE 1169/2011)</p>
     </div>
   </footer>
   <!-- Persistent reservation bar -->
   <div class="reserve-bar" role="region" aria-label="Prenota un tavolo">
     <span class="reserve-bar__text">Un tavolo vi aspetta — <em>il sapore nasce dal sapere.</em></span>
-    <!-- TODO: sostituire il numero con il WhatsApp mobile reale del ristorante;
-         ora usa il numero fisso come segnaposto e potrebbe non rispondere su WhatsApp. -->
     <a class="reserve-bar__btn"
-       href="https://wa.me/3907751561428?text=Ciao%20Sapore%20%C3%A8%20Sapere%2C%20vorrei%20prenotare%20un%20tavolo."
+       href="https://wa.me/393485475783?text=Ciao%20Sapore%20%C3%A8%20Sapere%2C%20vorrei%20prenotare%20un%20tavolo."
        target="_blank" rel="noopener"
        aria-label="Prenota ora su WhatsApp">
       <svg class="reserve-bar__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
