@@ -5,6 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contatti & Orari — Sapore è Sapere</title>
   <meta name="description" content="Contatti e orari di Sapore è Sapere a Frosinone: Via Marcello Mastroianni snc, tel. +39 0775 1561428. Aperti a cena dal lunedì e a pranzo venerdì, sabato e domenica.">
+
+  <!-- Open Graph / social sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:site_name" content="Sapore è Sapere">
+  <meta property="og:title" content="Contatti &amp; Orari — Sapore è Sapere">
+  <meta property="og:description" content="Vi aspettiamo a Frosinone, in Via Marcello Mastroianni. Per prenotazioni e informazioni, chiamateci o scriveteci.">
+  <meta property="og:url" content="https://andrearr18.github.io/sapere_sapore/contatti.html">
+  <meta property="og:image" content="https://andrearr18.github.io/sapere_sapore/assets/images/dishes/dish_3.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,6 +25,44 @@
   <!-- CSS -->
   <link rel="stylesheet" href="css/main.css">
   <script type="module" src="src/main.js"></script>
+
+  <!-- Structured data: Restaurant -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Sapore è Sapere",
+    "description": "Cucina creativa di pesce con proposte vegetariane, piatti originali e abbinamenti inediti a Frosinone, dalle esperienze stellate dello chef Marco Taglione e della pasticcera Marika Urbani.",
+    "servesCuisine": ["Seafood", "Italian"],
+    "priceRange": "€€",
+    "url": "https://andrearr18.github.io/sapere_sapore/",
+    "image": "https://andrearr18.github.io/sapere_sapore/assets/images/dishes/dish_3.jpg",
+    "telephone": "+3907751561428",
+    "email": "Sapore.sapere@libero.it",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Via Marcello Mastroianni snc",
+      "addressLocality": "Frosinone",
+      "postalCode": "03100",
+      "addressRegion": "FR",
+      "addressCountry": "IT"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "19:30",
+        "closes": "22:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Friday", "Saturday", "Sunday"],
+        "opens": "12:30",
+        "closes": "14:30"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Vai al contenuto</a>
@@ -29,7 +78,6 @@
       <label for="nav-toggle" class="nav-toggle-label" aria-label="Apri menu"><span></span></label>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="ristorante.html">Ristorante</a></li>
         <li><a href="chef.html">Chef</a></li>
         <li><a href="menu.html">Menù</a></li>
         <li><a href="vini.html">Vini</a></li>
@@ -68,11 +116,12 @@
             </p>
             <p class="contact-line">
               <strong>Social</strong>
-              Seguici su Instagram per non perdere le novità
+              <span><a href="https://www.instagram.com/ristorantesaporeesapere/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/ristorantesaporesapere/?locale=it_IT" target="_blank" rel="noopener">Facebook</a></span>
             </p>
             <div class="btn-row" style="justify-content:flex-start;margin-top:24px;">
               <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=Via+Marcello+Mastroianni+Frosinone" target="_blank" rel="noopener">Apri in mappa</a>
             </div>
+            <p class="contact-note">Prenotazione consigliata — vi aspettiamo.</p>
           </div>
 
           <div class="info-block">
@@ -105,17 +154,19 @@
         <a href="tel:+3907751561428">+39 0775 1561428</a> ·
         <a href="mailto:Sapore.sapere@libero.it">Sapore.sapere@libero.it</a>
       </p>
-      <p>Seguici su Instagram per non perdere le novità.</p>
+      <nav class="footer-social" aria-label="Social">
+        <a href="https://www.instagram.com/ristorantesaporeesapere/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/ristorantesaporesapere/?locale=it_IT" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://wa.me/393485475783" target="_blank" rel="noopener">WhatsApp</a>
+      </nav>
       <p class="footer-legal">© 2019–2026 Sapore è Sapere · Presenti allergeni (Reg. CE 1169/2011)</p>
     </div>
   </footer>
   <!-- Persistent reservation bar -->
   <div class="reserve-bar" role="region" aria-label="Prenota un tavolo">
     <span class="reserve-bar__text">Un tavolo vi aspetta — <em>il sapore nasce dal sapere.</em></span>
-    <!-- TODO: sostituire il numero con il WhatsApp mobile reale del ristorante;
-         ora usa il numero fisso come segnaposto e potrebbe non rispondere su WhatsApp. -->
     <a class="reserve-bar__btn"
-       href="https://wa.me/3907751561428?text=Ciao%20Sapore%20%C3%A8%20Sapere%2C%20vorrei%20prenotare%20un%20tavolo."
+       href="https://wa.me/393485475783?text=Ciao%20Sapore%20%C3%A8%20Sapere%2C%20vorrei%20prenotare%20un%20tavolo."
        target="_blank" rel="noopener"
        aria-label="Prenota ora su WhatsApp">
       <svg class="reserve-bar__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">

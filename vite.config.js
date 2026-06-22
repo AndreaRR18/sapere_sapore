@@ -35,11 +35,11 @@ export default defineConfig({
       // Define all HTML files as entry points
       input: {
         index: resolve(__dirname, 'index.html'),
-        ristorante: resolve(__dirname, 'ristorante.html'),
         chef: resolve(__dirname, 'chef.html'),
         menu: resolve(__dirname, 'menu.html'),
         vini: resolve(__dirname, 'vini.html'),
-        contatti: resolve(__dirname, 'contatti.html')
+        contatti: resolve(__dirname, 'contatti.html'),
+        notfound: resolve(__dirname, '404.html')
       }
     }
   },
