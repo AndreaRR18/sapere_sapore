@@ -37,22 +37,74 @@ Cucina creativa di pesce, piatti originali e abbinamenti inediti nati dalle espe
 ├── chef.html           # Lo Chef - Bio Marco Taglione, Marika Urbani
 ├── menu.html           # Menù - Antipasti, Primi, Secondi, Dolci, prezzi
 ├── vini.html           # Vini - Cantina con oltre 100 etichette
-├── galleria.html       # Galleria - Immagini piatti e vini
 ├── contatti.html       # Contatti - Orari, indirizzo, prenotazioni
+├── 
 ├── src/
-│   └── main.js          # Entry point JavaScript (minimale)
+│   └── main.js          # Entry point JavaScript (ES module)
+├── 
 ├── css/
-│   ├── main.css         # Tema principale (nuovo design)
-│   └── style.css        # Tema vecchio (backup)
+│   ├── main.css         # Tema principale (30KB+ - nuovo design)
+│   └── style.css        # Tema vecchio (10KB - backup)
+├── 
 ├── assets/
-│   ├── favicon.svg
-│   └── images/          # Immagini ristorante, chef, piatti, vini
-├── package.json         # Dipendenze Vite
-├── vite.config.js       # Configurazione Vite
-├── README.md            # Questo file
-├── .gitignore           # Files da ignorare
-├── .nojekyll            # GitHub Pages
-└── README-VITE.md       # Istruzioni Vite
+│   ├── favicon.svg       # Icona del sito
+│   └── images/           # Tutte le immagini organizzate per categoria
+│       ├── restaurant/   # Foto del ristorante (interni, esterni)
+│       │   ├── restaurant_1.jpg
+│       │   └── restaurant_2.jpg
+│       ├── chef_taglione/ # Foto dello chef
+│       │   ├── chef_taglione.jpg
+│       │   ├── chef_taglione_2.jpg
+│       │   ├── chef_taglione_3.jpg
+│       │   ├── chef_taglione_4.jpg
+│       │   └── chef_taglione_5.jpg
+│       ├── dishes/        # Foto dei piatti
+│       │   ├── dish_1.jpg
+│       │   ├── dish_2.jpg
+│       │   ├── dish_3.jpg
+│       │   ├── dish_4.jpg
+│       │   ├── dish_5.jpg
+│       │   └── dish_6.jpg
+│       ├── wines/         # Foto dei vini
+│       │   ├── wine_1.jpg
+│       │   ├── wine_2.jpg
+│       │   └── ...
+│       ├── certificates/ # Certificati dello chef
+│       │   ├── best_young_chef.jpg
+│       │   └── italian_accademy.png
+│       └── logo/          # Logo e brand
+├── 
+├── ai/                    # Configurazione agent (principale)
+│   └── AGENT.md          # Documentazione tecnica completa
+├── .claude/              # Skills di Claude
+│   └── skills/
+│       ├── restaurant-info/   # Dati canonici del ristorante
+│       │   ├── SKILL.md
+│       │   └── references/
+│       │       ├── business-info.md
+│       │       ├── menu.md
+│       │       └── chef-and-wine.md
+│       └── restaurant-vision/ # Linee guida brand e vision
+│           ├── SKILL.md
+│           └── references/
+│               ├── identity.md
+│               ├── vision.md
+│               ├── tone-of-voice.md
+│               └── website-plan.md
+├── .vibe/                # Skills di Vibe
+│   └── skills/
+│       └── restaurant-vision/ # Contesto addizionale brand
+│           ├── SKILL.md
+│           └── references/
+│               └── [stessi file di .claude]
+├── 
+├── package.json          # Dipendenze Vite e script
+├── vite.config.js        # Configurazione Vite per multi-page
+├── .gitignore            # Regole git ignore
+├── .nojekyll             # Compatibilità GitHub Pages
+├── .github/              # Configurazione GitHub
+├── README.md             # Questo file
+└── README-VITE.md        # Istruzioni specifiche Vite
 ```
 
 ## 🌐 Pagine
@@ -64,8 +116,9 @@ Cucina creativa di pesce, piatti originali e abbinamenti inediti nati dalle espe
 | `chef.html` | Biografia chef Marco Taglione e pasticcera Marika Urbani | ✅ |
 | `menu.html` | Menù completo con antipasti, primi, secondi, dessert, prezzi | ✅ |
 | `vini.html` | Selezione vini con regioni e bottiglie | ✅ |
-| `galleria.html` | Galleria immagini di piatti e vini | ✅ |
 | `contatti.html` | Orari, indirizzo, mappa, social, prenotazioni | ✅ |
+
+> **Nota**: La pagina `galleria.html` è stata incorporata nella struttura generica e può essere aggiunta in futuro.
 
 ## 💻 Sviluppo Locale
 
@@ -107,14 +160,20 @@ Il file `.nojekyll` evita che GitHub processi i file con Jekyll.
 
 ## 📝 Contenuti
 
-I contenuti canonici (menù, prezzi, bio chef, contatti) sono mantenuti in `.claude/skills/restaurant-info/`. 
+I contenuti canonici (menù, prezzi, bio chef, contatti) sono mantenuti nel sistema di skills. 
 
-### Fonti principale:
-- **Storia/Contatti**: `.claude/skills/restaurant-info/references/business-info.md`
+### Fonti principali:
+- **Dati Ristorante**: `.claude/skills/restaurant-info/references/business-info.md`
 - **Menù**: `.claude/skills/restaurant-info/references/menu.md`
 - **Chef/Vini**: `.claude/skills/restaurant-info/references/chef-and-wine.md`
+- **Brand & Vision**: `.claude/skills/restaurant-vision/` e `.vibe/skills/restaurant-vision/`
 
-**Regola**: Aggiorna prima i file nel `restaurant-info` skill, poi propaga le modifiche alle pagine HTML.
+### Documentazione Tecnica:
+- **Configurazione Completa**: `ai/AGENT.md`
+- **Struttura Progetto**: Questo file
+- **Istruzioni Vite**: `README-VITE.md`
+
+**Regola**: Aggiorna prima i file nei directory `restaurant-info` e `restaurant-vision`, poi propaga le modifiche alle pagine HTML.
 
 ## 🎨 Design
 

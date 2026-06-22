@@ -42,38 +42,91 @@ npm run preview
 
 ```
 Sapore è Sapere/
+├── index.html           # Home page
+├── ristorante.html      # Restaurant page
+├── chef.html            # Chef biography
+├── menu.html            # Complete menu
+├── vini.html            # Wine selection
+├── contatti.html        # Contact & reservations
+├── 
 ├── src/
-│   └── main.js          # Main JavaScript entry point (can be empty)
+│   └── main.js          # Main JavaScript entry point (ES module)
+├── 
 ├── css/
-│   ├── main.css         # Main stylesheet (new design)
-│   └── style.css        # Old stylesheet (backup)
+│   ├── main.css         # Main stylesheet (30KB+ - new design)
+│   └── style.css        # Old stylesheet (10KB - backup)
+├── 
 ├── assets/
-│   └── images/          # All images (restaurant, chef, dishes, wines)
-├── *.html              # All 7 HTML pages
+│   ├── favicon.svg       # Site icon
+│   └── images/           # All images organized by category
+│       ├── restaurant/   # Restaurant interior photos
+│       │   ├── restaurant_1.jpg
+│       │   └── restaurant_2.jpg
+│       ├── chef_taglione/ # Chef biography photos
+│       │   ├── chef_taglione.jpg
+│       │   ├── chef_taglione_2.jpg
+│       │   ├── chef_taglione_3.jpg
+│       │   ├── chef_taglione_4.jpg
+│       │   └── chef_taglione_5.jpg
+│       ├── dishes/        # Dish photos for menu/gallery
+│       │   ├── dish_1.jpg
+│       │   ├── dish_2.jpg
+│       │   ├── dish_3.jpg
+│       │   ├── dish_4.jpg
+│       │   ├── dish_5.jpg
+│       │   └── dish_6.jpg
+│       ├── wines/         # Wine photos
+│       │   ├── wine_1.jpg
+│       │   ├── wine_2.jpg
+│       │   └── ...
+│       ├── certificates/ # Chef certifications
+│       │   ├── best_young_chef.jpg
+│       │   └── italian_accademy.png
+│       └── logo/          # Brand logo
+├── 
+├── ai/                    # Agent configuration
+│   └── AGENT.md          # Complete technical documentation
+├── .claude/              # Claude Agent skills
+│   └── skills/
+│       ├── restaurant-info/
+│       └── restaurant-vision/
+├── .vibe/                # Vibe agent skills
+│   └── skills/
+│       └── restaurant-vision/
+├── 
 ├── vite.config.js       # Vite configuration
 ├── package.json         # Dependencies and scripts
-└── README.md            # Original README
+├── README.md            # Project documentation
+└── README-VITE.md        # This file
 ```
 
 ## 🌐 Available Pages
 
-- `/index.html` - Home page
-- `/ristorante.html` - Restaurant story and atmosphere
-- `/chef.html` - Chef Marco Taglione biography
-- `/menu.html` - Complete menu with prices
-- `/vini.html` - Wine selection
-- `/galleria.html` - Image gallery
-- `/contatti.html` - Contact information and reservations
+- `/index.html` - Home page with hero, cuisine highlights, story, tasting menu CTA
+- `/ristorante.html` - Restaurant story, atmosphere, and philosophy
+- `/chef.html` - Chef Marco Taglione biography and Marika Urbani pastry chef section
+- `/menu.html` - Complete menu with antipasti, primi, secondi, dessert, prices
+- `/vini.html` - Wine selection with regional organization and pairing options
+- `/contatti.html` - Contact information, hours, address, map, social links, reservations
 
 ## 🔧 Configuration
 
 ### Vite Configuration
 
 The `vite.config.js` file is configured for:
-- Multi-page application (7 entry points)
+- Multi-page application (6 entry points: index, ristorante, chef, menu, vini, contatti)
 - Development server on port 3000
 - Static assets in `/assets` directory
 - Output to `/dist` directory
+
+### Agent Configuration
+
+The project uses a modular agent configuration system:
+- **Primary**: `ai/AGENT.md` - Complete technical documentation
+- **Claude Skills**: `.claude/skills/` - Restaurant data and brand guidelines
+- **Vibe Skills**: `.vibe/skills/` - Additional brand context
+
+For complete website structure and development guidelines, see `ai/AGENT.md`.
 
 ### Base Path
 
